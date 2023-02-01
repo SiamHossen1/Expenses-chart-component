@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+
+    --ff-primary:  'DM Sans', sans-serif;
+
+    --fw-regular: 400;
+    --fw-extra-bold: 700;
+}
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+body{
+    background-color: var(--Cream);
+    font-family: var(--ff-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1rem;
+}
+main{
+    max-width: 350px;
+    width: 100%;
+}
+
+.balance_card{
+    background-color: var(--Soft-red);
+    border-radius: 0.33rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.balance_amaunt{
+    line-height: 1.6;
+    color: var(--Very-pale-orange);
+}
+
+.balance_amaunt h3{
+    font-size: 1.5rem;
+}
+
+.balance_card .logo_container img{
+    width: 4rem;
+    height: 2.5rem;
+}
+
+.spending_history_card{
+    background-color: var(--Very-pale-orange);
+    border-radius: 0.33rem;
+    padding: 1.5rem 1rem;
+}
+
+.spending_history_card h2{
+    color: var(--Dark-brown);
+    margin-bottom: 1rem;
+}
+
+.charts_container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    gap: 0.3rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.chart_day_container{
+    max-width: 3rem;
+    cursor: pointer;
+}
+
+.chart{
+    background-color: var(--Soft-red);
+    border-radius: 0.22rem;
+    width: 2rem;
+    margin-top: 0.9rem;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+}
+
+.mon{
+    height: 3rem;
+}
+.tue{
+    height: 6rem;
+}
+.wed{
+    height: 9rem;
+    background-color: var(--Cyan);
+}
+.thu{
+    height: 5rem;
+}
+.fri{
+    height: 4rem;
+}
+.sat{
+    height: 7rem;
+}
+.sun{
+    height: 4.5rem;
+}
+
+.spend{
+    background-color: black;
+    color: white;
+    padding: 0.4rem 0.2rem;
+    border-radius: 0.33rem;
+    margin-left: -0.44rem;
+    letter-spacing: 0.3px;
+    visibility: hidden;
+    /* transition: all 0.2s linear; */
+}
+.chart_day_container:hover .spend{
+    visibility: visible;
+}
+
+.chart:hover .spend{
+    visibility: visible;
+}
+.chart_day_container p:nth-child(3){
+    color: var(--Medium-brown);
+    font-size: 0.9rem;
+}
+hr{
+    width: 98%;
+    height: 2px;
+    background-color: var(--Cream);
+    margin: 1.5rem 0;
+}
+
+.total_spend_data_container p{
+    color: var(--Medium-brown);
+}
+
+.cost_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3rem;
+}
+
+#increase{
+    color: black;
+    font-weight: var(--fw-extra-bold);
+    text-align: right;
+}
+
+
+
